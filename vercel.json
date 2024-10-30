@@ -5,15 +5,5 @@
       "src": "index.js",
       "use": "@vercel/node"
     }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "index.js" // Semua request API ke index.js
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1" // Semua request untuk file statis ke folder public
-    }
   ]
 }
