@@ -9,11 +9,11 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "index.js"
+      "dest": "index.js" // Semua request API ke index.js
     },
     {
       "src": "/(.*)",
-      "dest": "public/index.html"
+      "dest": "/public/$1" // Semua request untuk file statis ke folder public
     }
   ]
 }
