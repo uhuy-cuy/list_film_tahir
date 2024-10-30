@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: white;
+}
+
+header {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.movie-list {
+  padding: 20px;
+}
+
+.movie-item {
+  margin-bottom: 15px;
+}
+
+.card {
+  background-color: #1c1c1c; /* Warna background gelap untuk card */
+  border: none;
+  height: 100%; /* Pastikan card mengambil tinggi penuh */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Mengatur konten secara vertikal */
+}
+
+.card-body {
+  padding: 10px; /* Ruang dalam card */
+  text-align: center;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.card-img-top {
+  object-fit: cover; /* Memastikan gambar ter-crop rapi tanpa merusak rasio */
+  height: 300px; /* Ukuran tetap untuk gambar film */
+  width: 100%; /* Lebar penuh */
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .movie-item {
+      margin-bottom: 20px;
+  }
+  .card-img-top {
+      height: 250px; /* Ukuran gambar lebih kecil untuk layar kecil */
+  }
+}
+
